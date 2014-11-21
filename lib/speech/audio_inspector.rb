@@ -52,7 +52,7 @@ module Speech
         raise "No such file or directory: #{file}"
       else
         out = out.scan(/Duration: (.*),/)
-        self.duration = Duration.new(out.first.first)
+        self.duration = Duration.new(out.first)
       end
     end
 
